@@ -1,0 +1,4282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #28293E;
+}
+
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.resp {
+  top: 60px;
+  transition: 600ms;
+  z-index: 1;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.resp li a {
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.header_bg {
+  background-color: black;
+}
+
+nav ul li a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 32px;
+  color: #f3f1f1;
+  text-align: center;
+}
+nav .contact {
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .modern_studio .left h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .modern_studio .left h1 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  width: 65%;
+  color: #FFFFFF;
+}
+main .modern_studio .left p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  width: 60%;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .modern_studio .left .button button {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .modern_studio .left .button p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+main .modern_studio .left .meta div p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .modern_studio .left .meta div h6 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 60px;
+}
+nav .contact {
+  border: 1px solid #6d6a6a;
+  border-radius: 6px;
+  width: 108px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul, nav .contact {
+    display: none;
+  }
+  nav .bar {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .bar i {
+    font-size: 30px;
+    color: aliceblue;
+  }
+}
+header {
+  transition: 600ms;
+  width: 100%;
+  height: 100%;
+  padding: 16px 60px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 20px;
+  }
+}
+main {
+  width: 100%;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+main .modern_studio {
+  width: 100%;
+  display: flex;
+  padding: 0 60px 0 60px;
+}
+main .modern_studio .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+main .modern_studio .left #star {
+  position: absolute;
+  right: 260px;
+  top: 70px;
+  width: 120px;
+  z-index: -1;
+}
+main .modern_studio .left .button {
+  display: flex;
+  gap: 40px;
+}
+main .modern_studio .left .button button {
+  background: #EF6D58;
+  width: 100px;
+  height: 34px;
+  border: 0px;
+  border-radius: 6px;
+}
+main .modern_studio .left .meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+main .modern_studio .left .meta div {
+  display: flex;
+  flex-direction: column;
+}
+main .modern_studio .left .meta div p {
+  width: 100%;
+}
+main .modern_studio .left .meta img {
+  width: 40px;
+  height: 40px;
+}
+main .modern_studio .right {
+  width: 50%;
+}
+main .modern_studio .right img {
+  width: 70%;
+}
+main .logos {
+  padding: 60px 60px 0 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(253, 240, 233);
+}
+main .logos .bicmap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .logos .bicmap img {
+  width: 100px;
+  height: 40px;
+}
+main .logos .arrow {
+  height: 1px;
+  width: 100%;
+  background-color: #F3D1BF;
+}
+main .about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  background-color: rgb(253, 240, 233);
+}
+main .about .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+main .about .left img {
+  width: 60%;
+}
+main .about .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .about .right #abt {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .about .right h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 64px;
+  color: #391400;
+  width: 70%;
+}
+main .about .right h4 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  color: #391400;
+}
+main .about .right p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(57, 20, 0, 0.64);
+  width: 70%;
+}
+main .about .right button {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  width: 100px;
+  height: 34px;
+  border: 0px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .experience {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .experience .top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main .experience .top div {
+  width: 25%;
+  border: 1px solid rgb(243, 209, 191);
+  padding-left: 48px;
+  padding-top: 45px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+main .experience .top div h5 {
+  font-family: " Epilogue";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .experience .top div p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .experience .bottom {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+main .experience .bottom .left {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .experience .bottom .left #how {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .experience .bottom .left h6 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .experience .bottom .left p {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .experience .bottom .left #read {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .experience .bottom .right {
+  width: 38%;
+}
+main .experience .bottom .right div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+main .experience .bottom .right div #numbers {
+  font-family: Epilogue;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .experience .bottom .right div #full {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .experience .line {
+  width: 90%;
+  background: rgb(243, 209, 191);
+  height: 1px;
+}
+main .video {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5%;
+}
+main .video .left {
+  width: 570px;
+  height: 368px;
+  position: relative;
+}
+main .video .left .scene {
+  width: 570px;
+  height: 368px;
+  position: absolute;
+  z-index: 0;
+}
+main .video .left .play {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  z-index: 1;
+}
+main .video .left .time {
+  bottom: 5%;
+  left: 5%;
+  position: absolute;
+}
+main .video .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+main .video .right #vid {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .video .right h6 {
+  width: 55%;
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .video .right p {
+  width: 55%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .featur {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+main .featur .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+main .featur .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .featur .left h2 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #391400;
+}
+main .featur .left p {
+  width: 65%;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .featur .left .tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .featur .left .tickets div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .featur .left .tickets div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .featur .right {
+  width: 40%;
+}
+main .featur .right img {
+  width: 80%;
+}
+main .prof {
+  width: 100%;
+  display: flex;
+  background-color: rgb(253, 240, 233);
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+main .prof .left {
+  width: 40%;
+}
+main .prof .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .prof .left p {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .prof .left .read {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .prof .right {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+main .prof .right .scope {
+  width: 45%;
+  background-color: #FFFFFF;
+  padding: 50px;
+  border: 1px solid rgb(243, 209, 191);
+  border-radius: 5px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+main .prof .right .scope div {
+  position: relative;
+  height: 70px;
+  width: 70px;
+}
+main .prof .right .scope div .img1 {
+  position: absolute;
+  width: 70px;
+}
+main .prof .right .scope div .img2 {
+  position: absolute;
+  width: 25px;
+  left: 30%;
+  top: 30%;
+}
+main .prof .right .scope h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .prof .right .scope p {
+  width: 69%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .prof .right .acces {
+  width: 45%;
+  padding: 50px;
+  height: 70%;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(243, 209, 191);
+  border-radius: 5px;
+}
+main .prof .right .acces h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .prof .right .acces p {
+  width: 70%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .service {
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 100px;
+}
+main .service .left {
+  width: 40%;
+}
+main .service .left img {
+  width: 80%;
+}
+main .service .right {
+  width: 40%;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+main .service .right h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .service .right h2 {
+  width: 75%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #391400;
+}
+main .service .right p {
+  width: 75%;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .service .right button {
+  height: 48px;
+  width: 138px;
+  left: 0px;
+  top: 0px;
+  border: 0px solid;
+  border-radius: 6px;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(57, 20, 0);
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .service .right .blonde {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .service .right .blonde .jenny {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+  padding-left: 75px;
+}
+main .service .right .blonde div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .service .right .blonde div p {
+  width: 40%;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .agency {
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+main .agency .top {
+  align-self: start;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .agency .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .agency .top h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+  width: 70%;
+}
+main .agency .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .agency .bottom .box {
+  border: 1px solid rgb(243, 209, 191);
+  border-radius: 5px;
+  padding: 50px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .agency .bottom .box .image {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+main .agency .bottom .box .image .oval {
+  width: 70px;
+  position: absolute;
+  z-index: 0;
+}
+main .agency .bottom .box .image .shape {
+  position: absolute;
+  width: 25px;
+  left: 30%;
+  top: 30%;
+}
+main .agency .bottom .box h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .agency .bottom .box p {
+  width: 80%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .agency .bottom .box .lrn {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .portfolio nav {
+  display: none;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 38%;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border: 0px solid white;
+  border-radius: 5px;
+}
+main .portfolio nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+main .portfolio nav div img {
+  width: 20px;
+}
+main .portfolio .category1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  gap: 30px;
+}
+main .portfolio .category1 p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .portfolio .category2 {
+  display: flex;
+}
+main .portfolio div h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #EF6D58;
+}
+main .portfolio div h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+main .portfolio .category {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+main .portfolio .category p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .portfolio .main1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+main .portfolio .main1 .box1 {
+  position: relative;
+  width: 30%;
+  height: 416;
+}
+main .portfolio .main1 .box1 img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 416px;
+}
+main .portfolio .main1 .box1 button {
+  height: 38px;
+  width: 84px;
+  left: 183px;
+  top: 6736px;
+  border-radius: 0px;
+  border: 0px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+main .portfolio .main1 .box1 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+main .portfolio .main1 .box2 {
+  position: relative;
+  width: 50%;
+  height: 416px;
+}
+main .portfolio .main1 .box2 img {
+  width: 100%;
+  height: 416px;
+}
+main .portfolio .main1 .box2 button {
+  height: 38px;
+  width: 84px;
+  left: 183px;
+  top: 6736px;
+  border-radius: 0px;
+  border: 0px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+main .portfolio .main1 .box2 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+main .portfolio .main2 {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+main .portfolio .main2 .box3 {
+  position: relative;
+  width: 50%;
+  height: 416px;
+}
+main .portfolio .main2 .box3 img {
+  width: 100%;
+  height: 416px;
+}
+main .portfolio .main2 .box3 button {
+  height: 38px;
+  width: 84px;
+  left: 183px;
+  top: 6736px;
+  border-radius: 0px;
+  border: 0px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+main .portfolio .main2 .box3 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+main .portfolio .main2 .box4 {
+  position: relative;
+  width: 30%;
+  height: 416;
+}
+main .portfolio .main2 .box4 img {
+  width: 100%;
+  height: 416px;
+}
+main .portfolio .main2 .box4 button {
+  height: 38px;
+  width: 84px;
+  left: 183px;
+  top: 6736px;
+  border-radius: 0px;
+  border: 0px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+main .portfolio .main2 .box4 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+main .portfolio .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .portfolio .btn button {
+  height: 48px;
+  width: 170px;
+  left: 635px;
+  top: 7408px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 60px;
+  }
+  main .modern_studio {
+    flex-direction: column-reverse;
+    padding: 0 20px 0 20px;
+  }
+  main .modern_studio .right {
+    width: 100%;
+  }
+  main .modern_studio .right img {
+    width: 100%;
+    height: 100%;
+  }
+  main .modern_studio .left {
+    width: 100%;
+  }
+  main .modern_studio .left h1 {
+    width: 95%;
+    font-size: 60px;
+  }
+  main .modern_studio .left p {
+    width: 80%;
+    font-size: 14px;
+  }
+  main .modern_studio .left .button {
+    width: 100%;
+    gap: 30px;
+    padding-left: 40px;
+  }
+  main .modern_studio .left .button button {
+    width: 150px;
+    height: 40px;
+  }
+  main .modern_studio .left .button p {
+    font-size: 14px;
+  }
+  main .logos {
+    padding-top: 40px;
+  }
+  main .logos .bicmap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .logos .bicmap img {
+    width: 120px;
+  }
+  main .about {
+    padding: 60px 20px;
+    flex-direction: column;
+  }
+  main .about .left {
+    width: 100%;
+  }
+  main .about .right {
+    width: 100%;
+  }
+  main .about .right h3 {
+    width: 100%;
+  }
+  main .about .right p {
+    width: 85%;
+  }
+  main .experience .top {
+    flex-direction: column;
+  }
+  main .experience .top div {
+    width: 100%;
+  }
+  main .experience .bottom {
+    flex-direction: column;
+  }
+  main .experience .bottom .left {
+    width: 100%;
+  }
+  main .experience .bottom .right {
+    width: 100%;
+  }
+  main .video {
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .video .right h6 {
+    width: 100%;
+  }
+  main .video .right p {
+    width: 100%;
+  }
+  main .featur {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  main .featur .left {
+    width: 50%;
+  }
+  main .featur .left h2 {
+    width: 100%;
+  }
+  main .featur .left p {
+    width: 100%;
+  }
+  main .featur .right {
+    margin-right: 30%;
+  }
+  main .featur .right img {
+    width: 160%;
+  }
+  main .prof {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .prof .right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .prof .right .scope {
+    width: 100%;
+  }
+  main .prof .right .acces {
+    width: 100%;
+  }
+  main .service {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .service .left {
+    width: 100%;
+    padding-left: 10%;
+  }
+  main .service .right {
+    padding-left: 10%;
+    width: 100%;
+  }
+  main .agency .top {
+    flex-direction: column;
+  }
+  main .agency .bottom {
+    flex-direction: column;
+  }
+  main .agency .bottom .box {
+    width: 100%;
+  }
+  main .portfolio nav {
+    display: flex;
+  }
+  main .portfolio .category {
+    display: none;
+  }
+  main .portfolio .main1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .portfolio .main1 .box1 {
+    display: none;
+  }
+  main .portfolio .main2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .portfolio .main2 .box4 {
+    width: 50%;
+  }
+}
+main .gift {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .gift .box {
+  position: relative;
+  border: 0px solid;
+  border-radius: 5px;
+  width: 83%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .gift .box .box1 h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .gift .box .box1 h4 {
+  width: 70%;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .gift .box .box1 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(239, 109, 88);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 0px;
+}
+main .gift .box .box1 img {
+  position: absolute;
+  top: -25%;
+  left: 11%;
+}
+main .gift .box .box2 img {
+  padding-top: 70px;
+  padding-right: 350px;
+}
+main .gift .box .box3 img {
+  width: 230px;
+  top: -6%;
+  right: 5%;
+  position: absolute;
+}
+main .enents1 {
+  padding-bottom: 100px;
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .enents1 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 41, 62);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .enents1 .top {
+  width: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .enents1 .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(239, 109, 88);
+}
+main .enents1 .top h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  line-height: 70px;
+}
+main .enents1 .bottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+main .enents1 .bottom .box {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid rgb(58, 60, 86);
+}
+main .enents1 .bottom .box .bottomt .bottomt1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .enents1 .bottom .box .bottomt .bottomt1 h1 {
+  font-family: Epilogue;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .enents1 .bottom .box .bottomt .bottomt1 h4 {
+  width: 30%;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .enents1 .bottom .box .bottomt .bottomt2 {
+  display: flex;
+  gap: 10px;
+}
+main .enents1 .bottom .box .bottomt .bottomt2 p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .enents1 .bottom .box .bottomt img {
+  width: 29px;
+}
+main .enents1 .bottom .box .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(58, 60, 86);
+}
+main .enents1 .bottom .box .bottomb {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .enents1 .bottom .box .bottomb h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .enents1 .bottom .box .bottomb p {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .enents1 .bottom .box .bottomb .text {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+main .team .top {
+  width: 83%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+main .team .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .team .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .team .top h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  width: 60%;
+}
+main .team .mid {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .team .mid .mid1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .team .mid .mid1 h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .team .mid .mid1 p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .team .mid .mid1 div {
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(58, 60, 86);
+}
+main .founder {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 11%;
+  align-items: center;
+}
+main .founder .left {
+  width: 40%;
+}
+main .founder .left img {
+  width: 477px;
+}
+main .founder .right {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .founder .right h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .founder .right h3 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .founder .right p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .founder .right .text {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .founder .right div {
+  position: absolute;
+  top: 0%;
+  right: 40%;
+  width: 100px;
+  height: 100px;
+}
+main .founder .right div img {
+  width: 100px;
+}
+main .client {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(253, 240, 233);
+  width: 100%;
+  gap: 50px;
+}
+main .client .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .client .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(239, 109, 88);
+}
+main .client .top h2 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgb(57, 20, 0);
+}
+main .client .bottom {
+  justify-content: center;
+  display: flex;
+}
+main .client .bottom .left {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+main .client .bottom .left .left_ {
+  border: 1px solid rgb(243, 209, 191);
+  gap: 40px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+}
+main .client .bottom .left .left_ .starss {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+main .client .bottom .left .left_ .text {
+  width: 80%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .left .left_ .glass {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .client .bottom .left .left_ .glass .name h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .left .left_ .glass .name p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .left .box {
+  border: 1px solid rgb(243, 209, 191);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 40px;
+}
+main .client .bottom .left .box .text {
+  width: 80%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .left .box .glass {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .client .bottom .left .box .glass .name h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .left .box .glass .name p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .right {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+main .client .bottom .right .box {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 40px;
+  border: 1px solid rgb(243, 209, 191);
+}
+main .client .bottom .right .box .text {
+  width: 80%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .right .box .glass {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .client .bottom .right .box .glass .name h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client .bottom .right .box .glass .name p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(40, 41, 62);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .check {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+main .check .top {
+  width: 83%;
+}
+main .check .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .check .top h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(40, 41, 62);
+}
+main .check .bottom {
+  width: 83%;
+  display: flex;
+  align-items: end;
+}
+main .check .bottom .card1 {
+  gap: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(243, 209, 191);
+}
+main .check .bottom .card1 h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .check .bottom .card1 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .check .bottom .card1 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .check .bottom .card1 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(40, 41, 62);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .check .bottom .card2 {
+  background-color: white;
+  gap: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(243, 209, 191);
+}
+main .check .bottom .card2 .btn {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(239, 109, 88);
+  color: rgb(255, 255, 255);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .check .bottom .card2 h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .check .bottom .card2 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .check .bottom .card2 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .check .bottom .card2 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(239, 109, 88);
+  color: rgb(255, 255, 255);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .asked {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 100px;
+}
+main .asked .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .asked .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .asked .left h3 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .asked .left .text {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .asked .left p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .asked .right {
+  width: 40%;
+}
+main .asked .right .box {
+  background-color: white;
+  padding: 50px;
+  border: 1px solid rgb(243, 209, 191);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .asked .right .box p {
+  width: 100%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .asked .right .box .box1 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .asked .right .box .box1 h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .asked .right .box2 {
+  padding: 50px;
+  border: 1px solid rgb(243, 209, 191);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .asked .right .box2 h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .award {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+main .award h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+main .award .mid {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .award .mid .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(243, 209, 191);
+  border-top: 1px solid rgb(243, 209, 191);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main .award .mid .box div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .award .mid .box div .sofa {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .award .mid .box .date {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+main .award .mid .box .logo {
+  display: flex;
+  align-items: center;
+}
+main .award .mid .box .logo p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+main .award .exp {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+main .blog {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+main .blog .top {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: end;
+}
+main .blog .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .blog .top div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+main .blog .top div h2 {
+  width: 30%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .blog .top div button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(57, 20, 0);
+  height: 48px;
+  width: 170px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+main .blog .bottom {
+  flex-wrap: wrap;
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  border-bottom: 1px solid rgb(243, 209, 191);
+  padding-bottom: 100px;
+}
+main .blog .bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .blog .bottom div img {
+  height: 224px;
+  width: 370px;
+  border-radius: 6px;
+}
+main .blog .bottom div h6 {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .blog .bottom div h4 {
+  width: 70%;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .blog .bottom div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .news {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+main .news .news1 {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+main .news .news1 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .news .news1 form {
+  display: flex;
+  gap: 40px;
+}
+main .news .news1 form input {
+  height: 48px;
+  width: 370px;
+  left: 0px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid rgb(243, 209, 191);
+  padding-left: 20px;
+}
+main .news .news1 form button {
+  height: 48px;
+  width: 170px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  background-color: white;
+  border: none;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(57, 20, 0);
+}
+main .map {
+  height: 720px;
+  width: 100%;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+main .map .mid {
+  height: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .map .mid .image .img {
+  height: 72px;
+  width: 72px;
+  border-radius: 0px;
+}
+main .map .mid .get {
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+}
+main .map .mid .get h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .map .mid .get form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+main .map .mid .get form input {
+  height: 48px;
+  width: 370px;
+  left: 0px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid rgb(243, 209, 191);
+  padding-left: 20px;
+}
+main .map .mid .get form .inp {
+  height: 88px;
+  width: 370px;
+  left: 0px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid rgb(243, 209, 191);
+}
+main .map .mid .get form button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(239, 109, 88);
+  border: none;
+}
+main .phone {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .phone .box {
+  width: 28%;
+  border: 1px solid rgb(243, 209, 191);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .phone .box p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .phone .box div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main .phone .box div h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .phone .box div .logo {
+  background-color: rgb(239, 109, 88);
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 60px;
+  color: white;
+  font-size: 30px;
+}
+main .dream {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .dream .box {
+  border-radius: 5px;
+  padding: 50px;
+  width: 83%;
+  background-color: rgb(239, 109, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+main .dream .box .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .dream .box .left h2 {
+  width: 85%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: white;
+}
+main .dream .box .left p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  width: 95%;
+}
+main .dream .box .left button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: none;
+  background-color: white;
+}
+main .dream .box .right {
+  width: 50%;
+}
+main .dream .box .right img {
+  width: 70%;
+}
+main .footer {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .footer .top {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+main .footer .top .box {
+  width: 100%;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgb(243, 209, 191);
+}
+main .footer .top .box p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .footer .top .box h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .footer .top .box h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .footer .bottom {
+  padding-top: 50px;
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+main .footer .bottom p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .footer .bottom div {
+  display: flex;
+  gap: 20px;
+}
+main .footer .bottom div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .footer .bottom div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+
+@media screen and (max-width: 768px) {
+  main .gift .box {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    position: static;
+  }
+  main .gift .box .box1 {
+    padding-top: 60px;
+    position: relative;
+  }
+  main .gift .box .box1 img {
+    position: absolute;
+    top: -45%;
+    left: -20%;
+  }
+  main .gift .box .box2 {
+    display: flex;
+  }
+  main .gift .box .box2 img {
+    position: static;
+    padding: 0;
+    padding-top: 50px;
+  }
+  main .gift .box .box3 img {
+    position: static;
+  }
+  main .enents1 .bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .team .top .left h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  main .team .mid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .founder {
+    gap: 50px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .founder .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .founder .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .founder .right h3 {
+    width: 100%;
+  }
+  main .client .bottom {
+    flex-direction: column;
+  }
+  main .client .bottom .left {
+    width: 100%;
+    padding: 10px;
+  }
+  main .client .bottom .right {
+    width: 100%;
+    padding: 10px;
+  }
+  main .check .bottom {
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .asked {
+    flex-direction: column;
+  }
+  main .asked .right {
+    padding: 10px;
+    width: 100%;
+  }
+  main .asked .left {
+    width: 100%;
+    padding: 10px;
+  }
+  main .award .mid .box {
+    flex-direction: column;
+  }
+  main .award .mid .box div {
+    flex-direction: column;
+  }
+  main .blog .top {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  main .blog .top div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .blog .top div h2 {
+    width: 60%;
+  }
+  main .blog .bottom {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+  }
+  main .blog .bottom div {
+    align-items: center;
+    justify-content: center;
+  }
+  main .news .news1 {
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .news .news1 form {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .news .news1 form button {
+    width: 370px;
+  }
+  main .map .mid {
+    flex-direction: column;
+  }
+  main .phone {
+    padding: 10px;
+    flex-direction: column;
+  }
+  main .phone .box {
+    width: 100%;
+  }
+  main .footer .top {
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .footer .bottom {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .dream .box {
+    flex-direction: column-reverse;
+  }
+  main .dream .box .left {
+    width: 100%;
+  }
+  main .dream .box .right {
+    width: 100%;
+  }
+}
+main {
+  width: 100%;
+  padding-top: 100px;
+}
+main .Webflow_expert {
+  width: 100%;
+  display: flex;
+  padding: 0 60px 0 60px;
+}
+main .Webflow_expert .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+main .Webflow_expert .left h3 {
+  color: #EF6D58;
+}
+main .Webflow_expert .left h1 {
+  color: aliceblue;
+  font-size: 80px;
+}
+main .Webflow_expert .left p {
+  color: aliceblue;
+}
+main .Webflow_expert .left #star {
+  position: absolute;
+  right: 260px;
+  top: 70px;
+  width: 120px;
+  z-index: -1;
+}
+main .Webflow_expert .left .button {
+  display: flex;
+  gap: 40px;
+}
+main .Webflow_expert .left .button button {
+  background: #EF6D58;
+  width: 100px;
+  height: 34px;
+  border: 0px;
+  border-radius: 6px;
+}
+main .Webflow_expert .right {
+  width: 50%;
+}
+main .Webflow_expert .right img {
+  width: 70%;
+}
+main .logos {
+  padding: 60px 60px 0 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(253, 240, 233);
+}
+
+#bayraqOlcusu {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.kate {
+  max-width: 1440px;
+}
+.kate .caren {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kate .caren ul {
+  display: flex;
+  gap: 60px;
+}
+.kate .caren .contact {
+  border: 1px solid #6d6a6a;
+  border-radius: 6px;
+  width: 108px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kate .caren .bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .kate .caren ul, .kate .caren .contact {
+    display: none;
+  }
+  .kate .caren .bar {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kate .caren .bar i {
+    font-size: 30px;
+    color: aliceblue;
+  }
+}
+main .design_studio {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+main .design_studio .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+main .design_studio .left h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .design_studio .left h1 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  width: 65%;
+  color: #FFFFFF;
+}
+main .design_studio .left p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  width: 60%;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .design_studio .left .button button {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .design_studio .left .button p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+main .design_studio .left .meta div p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .design_studio .left .meta div h6 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+main .design_studio .left #star {
+  position: absolute;
+  right: 260px;
+  top: 70px;
+  width: 120px;
+  z-index: -1;
+}
+main .design_studio .left .button {
+  display: flex;
+  gap: 40px;
+}
+main .design_studio .left .button button {
+  background: #EF6D58;
+  width: 100px;
+  height: 34px;
+  border: 0px;
+  border-radius: 6px;
+}
+main .design_studio .left .meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+main .design_studio .left .meta div {
+  display: flex;
+  flex-direction: column;
+}
+main .design_studio .left .meta div p {
+  width: 100%;
+}
+main .design_studio .left .meta img {
+  width: 40px;
+  height: 40px;
+}
+main .design_studio .right {
+  width: 40%;
+}
+main .design_studio .right img {
+  width: 80%;
+}
+main .agency-p {
+  max-width: 1440px;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .agency-p .bottomb p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+main .agency-p .top {
+  max-width: 1440px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align-last: center;
+}
+main .agency-p .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .agency-p .top h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+  width: 70%;
+}
+main .agency-p .bottom {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .agency-p .bottom .box {
+  border: 1px solid rgb(243, 209, 191);
+  border-radius: 5px;
+  padding: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .agency-p .bottom .box .image {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+main .agency-p .bottom .box .image .oval {
+  width: 70px;
+  position: absolute;
+  z-index: 0;
+}
+main .agency-p .bottom .box .image .shape {
+  position: absolute;
+  width: 25px;
+  left: 30%;
+  top: 30%;
+}
+main .agency-p .bottom .box h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #391400;
+}
+main .agency-p .bottom .box p {
+  width: 80%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .agency-p .bottom .box div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .agency-p .bottom .box div div {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+main .agency-p .bottom .box div .lrn {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .portfolio1 {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .portfolio1 .category1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  gap: 30px;
+}
+main .portfolio1 .category1 p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .portfolio1 .category2 {
+  display: flex;
+}
+main .portfolio1 div h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #EF6D58;
+}
+main .portfolio1 .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+}
+main .portfolio1 .top .topa {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  gap: 30px;
+}
+main .portfolio1 .top .topa .port {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .portfolio1 .top .topa .port h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+main .portfolio1 .top .topa .port button {
+  height: 48px;
+  width: 170px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  color: white;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(40, 41, 62);
+  border: 1px solid rgba(255, 255, 255, 0.2957);
+}
+main .portfolio1 .category {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+main .portfolio1 .category p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.64);
+}
+main .portfolio1 .main1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(137, 136, 151);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+main .portfolio1 .main1 .box1 {
+  position: relative;
+  width: 30%;
+  height: 416px;
+  padding: 5px;
+  border: 1px solid rgb(137, 136, 151);
+  border-radius: 5px;
+}
+main .portfolio1 .main1 .box1 img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 416px;
+}
+main .portfolio1 .main1 .box1 button {
+  height: 38px;
+  width: 84px;
+  left: 183px;
+  top: 6736px;
+  border-radius: 0px;
+  border: 0px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+main .portfolio1 .main1 .box1 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+main .portfolio1 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .portfolio1 .btn button {
+  height: 48px;
+  width: 170px;
+  left: 635px;
+  top: 7408px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+main .about1 {
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  background-color: rgb(253, 240, 233);
+}
+main .about1 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+main .about1 .left img {
+  width: 60%;
+}
+main .about1 .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .about1 .right #abt {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .about1 .right h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 64px;
+  color: #391400;
+  width: 70%;
+}
+main .about1 .right h4 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  color: #391400;
+}
+main .about1 .right p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(57, 20, 0, 0.64);
+  width: 70%;
+}
+main .about1 .right button {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  width: 100px;
+  height: 34px;
+  border: 0px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main .icoon {
+  background-color: rgb(253, 240, 233);
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+main .icoon .container {
+  width: 80%;
+  display: flex;
+}
+main .icoon .container .box {
+  width: 50%;
+  padding: 30px;
+  border: 1px solid rgb(243, 209, 191);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .icoon .container .box .box1 .iconCan {
+  padding: 15px;
+  background-color: #EF6D58;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+main .icoon .container .box .box1 .iconCan img {
+  width: 40px;
+}
+main .icoon .container .box .box2 h3 {
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .icoon .container .box .box2 p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .featur1 {
+  width: 100%;
+  max-width: 1440px;
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .featur1 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+main .featur1 .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .featur1 .left h2 {
+  width: 70%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .featur1 .left p {
+  width: 65%;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .featur1 .left .tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .featur1 .left .tickets div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .featur1 .left .tickets div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .featur1 .right {
+  width: 40%;
+}
+main .featur1 .right img {
+  width: 80%;
+}
+main .gift1 {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(249, 229, 218);
+}
+main .gift1 .box {
+  position: relative;
+  border: 0px solid;
+  border-radius: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .gift1 .box .box1 h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .gift1 .box .box1 h4 {
+  width: 70%;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .gift1 .box .box1 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(239, 109, 88);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 0px;
+}
+main .gift1 .box .box1 img {
+  position: absolute;
+  top: -29%;
+  left: 0%;
+}
+main .gift1 .box .boxxx p {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .client1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(253, 240, 233);
+  max-width: 1440px;
+  width: 100%;
+  gap: 50px;
+}
+main .client1 .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .client1 .top h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(239, 109, 88);
+}
+main .client1 .top h2 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgb(57, 20, 0);
+}
+main .client1 .bottom {
+  justify-content: center;
+  display: flex;
+  width: 80%;
+}
+main .client1 .bottom .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .client1 .bottom .left .left_ {
+  border: 1px solid rgb(243, 209, 191);
+  gap: 40px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 33%;
+}
+main .client1 .bottom .left .left_ .starss {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+main .client1 .bottom .left .left_ .text {
+  width: 100%;
+  font-family: Epilogue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 .bottom .left .left_ .glass {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .client1 .bottom .left .left_ .glass .name h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 .bottom .left .left_ .glass .name p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 .bottom .left .box {
+  border: 1px solid rgb(243, 209, 191);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 40px;
+  width: 33%;
+}
+main .client1 .bottom .left .box .text {
+  width: 100%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 .bottom .left .box .glass {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .client1 .bottom .left .box .glass .name h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 .bottom .left .box .glass .name p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+main .client1 button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(40, 41, 62);
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+main .asked1 {
+  max-width: 1440px;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #28293e;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 100px;
+}
+main .asked1 .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .asked1 .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .asked1 .left h3 {
+  width: 60%;
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .asked1 .left .text {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .asked1 .left p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .asked1 .right {
+  width: 40%;
+}
+main .asked1 .right .box {
+  background-color: white;
+  padding: 50px;
+  border: 1px solid rgb(243, 209, 191);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .asked1 .right .box p {
+  width: 100%;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .asked1 .right .box .box1 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .asked1 .right .box .box1 h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .asked1 .right .box2 {
+  padding: 50px;
+  border: 1px solid rgb(58, 60, 86);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .asked1 .right .box2 h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .map1 {
+  max-width: 1440px;
+  height: 720px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .map1 .mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+main .map1 .mid .phone1 {
+  width: 40%;
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  flex-direction: column;
+}
+main .map1 .mid .phone1 .texts {
+  display: flex;
+  flex-direction: column;
+}
+main .map1 .mid .phone1 .texts h2 {
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .map1 .mid .phone1 .texts h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .map1 .mid .phone1 .texts p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .map1 .mid .phone1 .box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .map1 .mid .phone1 .box p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .map1 .mid .phone1 .box div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+}
+main .map1 .mid .phone1 .box div h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .map1 .mid .phone1 .box div .logo {
+  background-color: rgb(239, 109, 88);
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+}
+main .map1 .mid .get {
+  width: 40%;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+}
+main .map1 .mid .get h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgbargba(57, 20, 0, 1);
+}
+main .map1 .mid .get form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .map1 .mid .get form input {
+  height: 48px;
+  width: 370px;
+  left: 0px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid rgb(243, 209, 191);
+  padding-left: 20px;
+}
+main .map1 .mid .get form .inp {
+  height: 88px;
+  width: 370px;
+  left: 0px;
+  top: 28px;
+  border-radius: 6px;
+  border: 1px solid rgb(243, 209, 191);
+}
+main .map1 .mid .get form button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(239, 109, 88);
+  border: none;
+}
+main .dream1 {
+  max-width: 1440px;
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 200px;
+}
+main .dream1 .box {
+  border-radius: 5px;
+  padding: 50px;
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+main .dream1 .box .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .dream1 .box .left h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6D58;
+}
+main .dream1 .box .left h2 {
+  width: 85%;
+  font-family: Epilogue;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+}
+main .dream1 .box .left p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(57, 20, 0);
+  width: 95%;
+}
+main .dream1 .box .left button {
+  font-family: Epilogue;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 48px;
+  width: 154px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: rgb(239, 109, 88);
+}
+main .dream1 .box .right {
+  width: 40%;
+}
+main .dream1 .box .right img {
+  width: 80%;
+}
+main .footer1 {
+  max-width: 1440px;
+  width: 100%;
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .footer1 .top {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+main .footer1 .top .box {
+  width: 100%;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgb(243, 209, 191);
+}
+main .footer1 .top .box p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .footer1 .top .box h4 {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .footer1 .top .box h5 {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: rgb(239, 109, 88);
+}
+main .footer1 .bottom {
+  padding-top: 50px;
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+main .footer1 .bottom p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .footer1 .bottom div {
+  display: flex;
+  gap: 20px;
+}
+main .footer1 .bottom div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .footer1 .bottom div p {
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .logos1 {
+  padding: 60px 60px 0 60px;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(40, 41, 62);
+}
+main .logos1 .bicmap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+main .logos1 .bicmap img {
+  width: 100px;
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  main .agency-p .bottom {
+    padding: 10px;
+    flex-direction: column;
+  }
+  main .agency-p .bottom .box {
+    width: 100%;
+  }
+  main .design_studio {
+    flex-direction: column-reverse;
+    padding: 0 20px 0 20px;
+  }
+  main .design_studio .right {
+    width: 100%;
+  }
+  main .design_studio .right img {
+    width: 100%;
+    height: 100%;
+  }
+  main .design_studio .left {
+    width: 100%;
+  }
+  main .design_studio .left h1 {
+    width: 95%;
+    font-size: 60px;
+  }
+  main .design_studio .left p {
+    width: 80%;
+    font-size: 14px;
+  }
+  main .design_studio .left .button {
+    width: 100%;
+    gap: 30px;
+    padding-left: 40px;
+  }
+  main .design_studio .left .button button {
+    width: 150px;
+    height: 40px;
+  }
+  main .design_studio .left .button p {
+    font-size: 14px;
+  }
+  main .portfolio1 .main1 {
+    flex-direction: column;
+  }
+  main .portfolio1 .main1 .box1 {
+    width: 100%;
+  }
+  main .about1 {
+    padding: 60px 20px;
+    flex-direction: column;
+  }
+  main .about1 .left {
+    width: 100%;
+  }
+  main .about1 .right {
+    width: 100%;
+  }
+  main .about1 .right h3 {
+    width: 100%;
+  }
+  main .about1 .right p {
+    width: 85%;
+  }
+  main .icoon .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  main .icoon .container .box {
+    width: 100%;
+  }
+  main .featur1 {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  main .featur1 .right {
+    width: 100%;
+  }
+  main .featur1 .left {
+    width: 100%;
+  }
+  main .gift1 {
+    padding-top: 100px;
+  }
+  main .gift1 .box {
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .gift1 .box .box1 {
+    width: 100%;
+  }
+  main .gift1 .box .box1 img {
+    top: -25%;
+    left: 0%;
+  }
+  main .gift1 .box .box2 {
+    width: 100%;
+  }
+  main .gift1 .box .boxxx {
+    width: 100%;
+  }
+  main .client1 .bottom .left {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  main .client1 .bottom .left .left_ {
+    width: 100%;
+  }
+  main .client1 .bottom .left .box {
+    width: 100%;
+  }
+  main .asked1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  main .asked1 .left {
+    width: 100%;
+  }
+  main .asked1 .right {
+    width: 100%;
+  }
+  main .map1 .mid {
+    flex-direction: column;
+  }
+  main .map1 .mid .phone1 {
+    width: 100%;
+  }
+  main .map1 .mid .get {
+    width: 100%;
+  }
+  main .dream1 .box {
+    flex-direction: column-reverse;
+  }
+  main .dream1 .box .left {
+    width: 100%;
+  }
+  main .dream1 .box .right {
+    width: 100%;
+  }
+  main .footer1 .top {
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .footer1 .bottom {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .logos1 {
+    padding-top: 40px;
+  }
+  main .logos1 .bicmap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .logos1 .bicmap img {
+    width: 120px;
+  }
+}/*# sourceMappingURL=main.css.map */

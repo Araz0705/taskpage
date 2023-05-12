@@ -1,0 +1,1812 @@
+main {
+    .gift {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .box {
+            position: relative;
+            border: 0px solid;
+            border-radius: 5px;
+            width: 83%;
+            background-color: rgb(253, 240, 233);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .box1 {
+                h5 {
+                    //styleName: H5;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    color: rgba(239, 109, 88, 1);
+                }
+
+                h4 {
+                    //styleName: H4;
+                    width: 70%;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                button {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 1);
+                    background-color: rgba(239, 109, 88, 1);
+                    height: 48px;
+                    width: 154px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    border: 0px;
+                }
+
+                img {
+                    position: absolute;
+                    top: -25%;
+                    left: 11%;
+                }
+            }
+
+            .box2 {
+                img {
+                    padding-top: 70px;
+                    padding-right: 350px;
+                }
+            }
+
+            .box3 {
+                img {
+                    width: 230px;
+                    top: -6%;
+                    right: 5%;
+                    position: absolute;
+
+                }
+            }
+        }
+    }
+
+    .enents1 {
+        padding-bottom: 100px;
+        gap: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        button {
+            font-family: Epilogue;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 14px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgb(40, 41, 62);
+            height: 48px;
+            width: 154px;
+            left: 0px;
+            top: 0px;
+            border-radius: 6px;
+            border: 1px solid white;
+        }
+
+        .top {
+            width: 83%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: center;
+
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h2 {
+
+                //styleName: H2;
+                font-family: Epilogue;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 64px;
+                letter-spacing: -1px;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                width: 50%;
+                line-height: 70px;
+            }
+        }
+
+        .bottom {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .box {
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                border: 1px solid rgba(58, 60, 86, 1);
+
+                .bottomt {
+                    .bottomt1 {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        h1 {
+                            //styleName: H1;
+                            font-family: Epilogue;
+                            font-size: 72px;
+                            font-weight: 800;
+                            line-height: 80px;
+                            letter-spacing: -2px;
+                            text-align: left;
+                            color: rgba(255, 255, 255, 1);
+                        }
+
+                        h4 {
+                            //styleName: H4;
+                            width: 30%;
+                            font-family: Epilogue;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 32px;
+                            letter-spacing: 0px;
+                            text-align: left;
+                            color: rgba(255, 255, 255, 1);
+                        }
+                    }
+
+                    .bottomt2 {
+                        display: flex;
+                        gap: 10px;
+
+                        p {
+                            //styleName: Text;
+                            font-family: Epilogue;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 32px;
+                            letter-spacing: 0px;
+                            text-align: left;
+                            color: rgba(255, 255, 255, 1);
+                        }
+                    }
+
+                    img {
+                        width: 29px;
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgba(58, 60, 86, 1);
+                }
+
+                .bottomb {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h4 {
+                        //styleName: H4;
+                        font-family: Epilogue;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    p {
+                        //styleName: Text;
+                        width: 60%;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    .text {
+                        //styleName: Text;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+
+        .top {
+            width: 83%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: left;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h2 {
+                //styleName: H2;
+                font-family: Epilogue;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 64px;
+                letter-spacing: -1px;
+                text-align: left;
+                color: rgba(255, 255, 255, 1);
+                width: 60%;
+            }
+        }
+
+        .mid {
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .mid1 {
+                display: flex;
+                flex-direction: column;
+                
+
+                gap: 20px;
+
+                h4 {
+                    //styleName: H4;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                p {
+                    //styleName: Text;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.64);
+                }
+
+                div {
+                    width: 120%;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid rgba(58, 60, 86, 1)
+                }
+
+                ;
+            }
+        }
+
+    }
+
+    .founder {
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        gap: 11%;
+        align-items: center;
+
+        .left {
+            width: 40%;
+
+            img {
+                width: 477px;
+            }
+        }
+
+        .right {
+            width: 40%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: left;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h3 {
+                //styleName: H3;
+                width: 60%;
+                font-family: Epilogue;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 48px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            p {
+                //styleName: Text_Big;
+                font-family: Epilogue;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .text {
+                //styleName: Text_Small;
+                font-family: Epilogue;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(255, 255, 255, 0.64);
+            }
+
+            div {
+                position: absolute;
+                top: 0%;
+                right: 40%;
+                width: 100px;
+                height: 100px;
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .client {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(253, 240, 233);
+        width: 100%;
+        gap: 50px;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: center;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h2 {
+                //styleName: H2;
+                width: 60%;
+                font-family: Epilogue;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 64px;
+                letter-spacing: -1px;
+                text-align: center;
+                color: rgba(57, 20, 0, 1);
+            }
+        }
+
+        .bottom {
+            justify-content: center;
+            display: flex;
+
+            .left {
+
+                width: 42%;
+
+                display: flex;
+                flex-direction: column;
+
+                .left_ {
+                    border: 1px solid rgba(243, 209, 191, 1);
+                    gap: 40px;
+                    padding: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-color: white;
+
+                    .starss {
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 0;
+                    }
+
+                    .text {
+                        width: 80%;
+                        //styleName: Text;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+
+                    .glass {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+
+                        .name {
+                            h4 {
+                                //styleName: H4;
+                                font-family: Epilogue;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+
+                            p {
+                                //styleName: Text;
+                                font-family: Epilogue;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+
+                .box {
+                    border: 1px solid rgba(243, 209, 191, 1);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px;
+                    gap: 40px;
+
+
+                    .text {
+                        width: 80%;
+                        //styleName: Text;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+
+                    }
+
+                    .glass {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .name {
+                            h4 {
+                                //styleName: H4;
+                                font-family: Epilogue;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+
+                            p {
+                                //styleName: Text;
+                                font-family: Epilogue;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            .right {
+                width: 42%;
+
+                display: flex;
+                flex-direction: column;
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px;
+                    gap: 40px;
+                    border: 1px solid rgba(243, 209, 191, 1);
+
+
+                    .text {
+                        width: 80%;
+                        //styleName: Text;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+
+                    }
+
+                    .glass {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .name {
+                            h4 {
+                                //styleName: H4;
+                                font-family: Epilogue;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+
+                            p {
+                                //styleName: Text;
+                                font-family: Epilogue;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 32px;
+                                letter-spacing: 0px;
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        button {
+            font-family: Epilogue;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 14px;
+            letter-spacing: 0px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgb(40, 41, 62);
+            height: 48px;
+            width: 154px;
+            left: 0px;
+            top: 0px;
+            border-radius: 6px;
+            border: 1px solid white;
+        }
+    }
+
+    .check {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 100px;
+
+        .top {
+            width: 83%;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: left;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h2 {
+                //styleName: H2;
+                font-family: Epilogue;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 64px;
+                letter-spacing: -1px;
+                text-align: left;
+                color: rgb(40, 41, 62);
+            }
+        }
+
+        .bottom {
+            width: 83%;
+            display: flex;
+            align-items: end;
+
+
+            .card1 {
+                gap: 20px;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgba(243, 209, 191, 1);
+
+                h5 {
+                    //styleName: H5;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    color: rgba(239, 109, 88, 1);
+                }
+
+                h3 {
+                    //styleName: H3;
+                    font-family: Epilogue;
+                    font-size: 40px;
+                    font-weight: 800;
+                    line-height: 48px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                button {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 1);
+                    color: rgb(40, 41, 62);
+                    height: 48px;
+                    width: 154px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    border: 1px solid white;
+                }
+            }
+
+            .card2 {
+                background-color: white;
+                gap: 20px;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgba(243, 209, 191, 1);
+
+                .btn {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    background-color: rgba(239, 109, 88, 1);
+                    color: rgb(255, 255, 255);
+                    height: 48px;
+                    width: 154px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    border: 1px solid white;
+                }
+
+                h5 {
+                    //styleName: H5;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    color: rgba(239, 109, 88, 1);
+                }
+
+                h3 {
+                    //styleName: H3;
+                    font-family: Epilogue;
+                    font-size: 40px;
+                    font-weight: 800;
+                    line-height: 48px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                button {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    background-color: rgba(239, 109, 88, 1);
+                    color: rgb(255, 255, 255);
+                    height: 48px;
+                    width: 154px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    border: 1px solid white;
+                }
+            }
+
+        }
+    }
+
+    .asked {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-bottom: 100px;
+
+        .left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: left;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            h3 {
+                //styleName: H3;
+                width: 60%;
+                font-family: Epilogue;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 48px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 1);
+            }
+
+            .text {
+                //styleName: Text;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 1);
+            }
+
+            p {
+                //styleName: Text;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 1);
+            }
+        }
+
+        .right {
+            width: 40%;
+
+            .box {
+                background-color: white;
+                padding: 50px;
+                border: 1px solid rgba(243, 209, 191, 1);
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                p {
+                    //styleName: Text;
+                    width: 100%;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 0.64);
+                }
+
+                .box1 {
+
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+
+                    h4 {
+                        //styleName: H4;
+                        font-family: Epilogue;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: rgba(57, 20, 0, 1);
+                    }
+                }
+            }
+
+            .box2 {
+                padding: 50px;
+                border: 1px solid rgba(243, 209, 191, 1);
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+            }
+        }
+
+    }
+
+    .award {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        gap: 50px;
+
+        h3 {
+            //styleName: H3;
+            font-family: Epilogue;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 48px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        .mid {
+            width: 83%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid rgba(243, 209, 191, 1);
+                border-top: 1px solid rgba(243, 209, 191, 1);
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .sofa {
+                        //styleName: Text_Big;
+                        font-family: Epilogue;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+                }
+
+                .date {
+                    //styleName: Text;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        //styleName: Text;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        .exp {
+            //styleName: Text;
+            font-family: Epilogue;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: right;
+        }
+
+    }
+
+    .blog {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        gap: 50px;
+
+        .top {
+            width: 83%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+            justify-content: end;
+
+            h5 {
+                //styleName: H5;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 3px;
+                text-align: left;
+                color: rgba(239, 109, 88, 1);
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+                h2 {
+                    //styleName: H2;
+                    width: 30%;
+                    font-family: Epilogue;
+                    font-size: 56px;
+                    font-weight: 800;
+                    line-height: 64px;
+                    letter-spacing: -1px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                button {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    color: rgba(57, 20, 0, 1);
+                    height: 48px;
+                    width: 170px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    background-color: rgba(255, 255, 255, 1);
+                    border: none;
+                }
+            }
+        }
+
+        .bottom {
+            flex-wrap: wrap;
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5%;
+            border-bottom: 1px solid rgba(243, 209, 191, 1);
+            padding-bottom: 100px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                img {
+                    height: 224px;
+                    width: 370px;
+
+
+                    border-radius: 6px;
+                }
+
+                h6 {
+                    //styleName: Text_Big;
+                    font-family: Epilogue;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                h4 {
+                    //styleName: H4;
+                    width: 70%;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                p {
+                    //styleName: Text;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 0.64);
+                }
+            }
+        }
+    }
+
+    .news {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        gap: 50px;
+
+        .news1 {
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                //styleName: H3;
+                font-family: Epilogue;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 48px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 1);
+            }
+
+            form {
+                display: flex;
+                gap: 40px;
+
+                input {
+                    height: 48px;
+                    width: 370px;
+                    left: 0px;
+                    top: 28px;
+                    border-radius: 6px;
+                    border: 1px solid rgba(243, 209, 191, 1);
+                    padding-left: 20px;
+
+                }
+
+                button {
+                    height: 48px;
+                    width: 170px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    background-color: white;
+                    border: none;
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    color: rgba(57, 20, 0, 1);
+                }
+            }
+        }
+    }
+
+    .map {
+        height: 720px;
+        width: 100%;
+        background-image: url(../img/map.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+
+        .mid {
+            height: 720px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            align-items: center;
+
+            .image {
+                .img {
+                    height: 72px;
+                    width: 72px;
+
+                    border-radius: 0px;
+                }
+            }
+
+            .get {
+                border-radius: 6px;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: white;
+                padding: 20px;
+
+
+                h4 {
+                    //styleName: H4;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    gap: 20px;
+
+                    input {
+                        height: 48px;
+                        width: 370px;
+                        left: 0px;
+                        top: 28px;
+                        border-radius: 6px;
+                        border: 1px solid rgba(243, 209, 191, 1);
+                        padding-left: 20px;
+
+                    }
+
+                    .inp {
+                        height: 88px;
+                        width: 370px;
+                        left: 0px;
+                        top: 28px;
+                        border-radius: 6px;
+                        border: 1px solid rgba(243, 209, 191, 1);
+
+                    }
+
+                    button {
+                        font-family: Epilogue;
+                        font-size: 14px;
+                        font-weight: 900;
+                        line-height: 14px;
+                        letter-spacing: 0px;
+                        text-align: center;
+
+                        height: 48px;
+                        width: 154px;
+                        left: 0px;
+                        top: 0px;
+                        border-radius: 6px;
+                        color: white;
+                        background-color: rgba(239, 109, 88, 1);
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .phone {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .box {
+            width: 28%;
+            border: 1px solid rgba(243, 209, 191, 1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            p {
+                //styleName: Text_Big;
+                font-family: Epilogue;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 1);
+            }
+
+            div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                h5 {
+                    //styleName: H5;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    color: rgba(239, 109, 88, 1);
+                }
+
+                .logo {
+                    background-color: rgba(239, 109, 88, 1);
+                    width: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    height: 60px;
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .dream {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .box {
+            border-radius: 5px;
+            padding: 50px;
+            width: 83%;
+            background-color: rgb(239, 109, 88);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+
+            .left {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h2 {
+                    width: 85%;
+                    //styleName: H2;
+                    font-family: Epilogue;
+                    font-size: 56px;
+                    font-weight: 800;
+                    line-height: 64px;
+                    letter-spacing: -1px;
+                    text-align: left;
+                    color: white;
+                }
+
+                p {
+                    //styleName: Text;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: white;
+                    width: 95%;
+                }
+
+                button {
+                    font-family: Epilogue;
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    height: 48px;
+                    width: 154px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 6px;
+                    border: none;
+                    background-color: white;
+                }
+            }
+
+            .right {
+                width: 50%;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        background-color: rgb(253, 240, 233);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .top {
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+
+            .box {
+                width: 100%;
+                padding-bottom: 100px;
+                border-bottom: 1px solid rgba(243, 209, 191, 1);
+
+                p {
+                    //styleName: Text;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                h4 {
+                    //styleName: H4;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 1);
+                }
+
+                h5 {
+                    //styleName: H5;
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    color: rgb(239, 109, 88);
+                }
+            }
+        }
+
+        .bottom {
+            padding-top: 50px;
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                //styleName: Text;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: rgba(57, 20, 0, 0.64);
+            }
+
+            div {
+                display: flex;
+                gap: 20px;
+
+                p {
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 0.64);
+                }
+
+                p {
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: rgba(57, 20, 0, 0.64);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        .gift {
+            .box {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 50px;
+                position: static;
+
+                .box1 {
+                    padding-top: 60px;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: -45%;
+                        left: -20%;
+                    }
+                }
+
+                .box2 {
+                    display: flex;
+
+                    img {
+                        position: static;
+                        padding: 0;
+                        padding-top: 50px;
+                    }
+                }
+
+                .box3 {
+                    img {
+                        position: static;
+                    }
+                }
+            }
+        }
+
+        .enents1 {
+
+            .bottom {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .team {
+            .top {
+                .left {
+                    h2 {
+                        font-size: 40px;
+
+                        width: 100%;
+                    }
+                }
+            }
+
+            .mid {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .founder {
+            gap: 50px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .right {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                h3 {
+                    width: 100%;
+                }
+            }
+        }
+
+        .client {
+            .bottom {
+                flex-direction: column;
+
+                .left {
+                    width: 100%;
+                    padding: 10px;
+                }
+
+                .right {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+        }
+
+
+        .check {
+            .bottom {
+                padding: 10px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        .asked {
+            flex-direction: column;
+
+            .right {
+                padding: 10px;
+                width: 100%;
+
+            }
+
+            .left {
+                width: 100%;
+                padding: 10px;
+            }
+
+        }
+
+        .award {
+            .mid {
+                .box {
+                    flex-direction: column;
+
+                    div {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .blog {
+            .top {
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+
+                div {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2 {
+                        width: 60%;
+                    }
+                }
+            }
+
+            .bottom {
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                flex-direction: column;
+
+                div {
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .news {
+            .news1 {
+                gap: 20px;
+                align-items: center;
+                flex-direction: column;
+
+                form {
+                    flex-direction: column;
+                    align-items: center;
+
+                    button {
+                        width: 370px;
+                    }
+                }
+            }
+        }
+
+        .map {
+
+            .mid {
+                flex-direction: column;
+            }
+
+        }
+
+        .phone {
+            padding: 10px;
+            flex-direction: column;
+
+            .box {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            .top {
+                gap: 10px;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .bottom {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .dream {
+            .box {
+                flex-direction: column-reverse;
+
+                .left {
+                    width: 100%;
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}
